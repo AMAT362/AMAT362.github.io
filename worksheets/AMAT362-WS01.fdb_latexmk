@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1612167719 "AMAT362-WS01.tex" "AMAT362-WS01.pdf" "AMAT362-WS01" 1612167720
+["pdflatex"] 1612171379 "AMAT362-WS01.tex" "AMAT362-WS01.pdf" "AMAT362-WS01" 1612171380
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -45,7 +45,6 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/xypic/xybtip10.tfm" 1381187214 608 50246cc71b0635b0ba0a5c10a0bf4257 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/xypic/xycirc10.tfm" 1381187214 844 3393210079fb4ed9347e214b3bfd7c1a ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/xypic/xydash10.tfm" 1381187214 984 5c01c46b93e3ba8369f3f8edc6e62aef ""
-  "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -108,11 +107,11 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1611001862 3277629 034433d517987d5ced3cbdce407a2170 ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "AMAT362-WS01.aux" 1612167719 3113 f0f935f72b3f92bae63a486a88009540 "pdflatex"
-  "AMAT362-WS01.out" 1612167719 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "AMAT362-WS01.tex" 1612167719 3229 703d2148cf62ac7b24e621d2e61b2340 ""
+  "AMAT362-WS01.aux" 1612171380 3113 f0f935f72b3f92bae63a486a88009540 "pdflatex"
+  "AMAT362-WS01.out" 1612171380 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "AMAT362-WS01.tex" 1612171379 3233 4c89e3416e7acfd3b946bca7a21592d0 ""
   (generated)
-  "AMAT362-WS01.pdf"
-  "AMAT362-WS01.log"
   "AMAT362-WS01.out"
+  "AMAT362-WS01.pdf"
   "AMAT362-WS01.aux"
+  "AMAT362-WS01.log"
