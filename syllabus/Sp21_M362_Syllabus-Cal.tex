@@ -1,0 +1,240 @@
+\documentclass[11pt,reqno]{amsproc}
+\usepackage{termcal}
+%\title{Research Statement --- Justin M. Curry\vspace{-1in}}
+
+\setlength{\parskip}{0.45\baselineskip}
+
+\usepackage{amsmath,mathrsfs}
+\usepackage{amssymb,latexsym}
+%\usepackage{eulervm}
+
+\usepackage{graphicx}
+\usepackage{nicefrac}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[all]{xy}
+\usepackage{pb-diagram,pb-xy}
+%\usepackage[margin=1in,headheight=35pt,footskip=.3in]{geometry}
+\usepackage[margin=0.7in]{geometry}
+%\usepackage{fullpage}
+
+\usepackage{hyperref}
+\hypersetup
+{
+    colorlinks,	%
+    citecolor=Gray,%
+    filecolor=Gray,%
+    linkcolor=Gray,%
+    urlcolor=Gray
+}
+
+\usepackage{mdframed}
+% \usepackage{tikz}
+
+\mdfsetup{skipabove=\topskip,skipbelow=\topskip}
+
+
+
+\input{shortcuts}
+
+\usepackage{wrapfig}
+
+\newcommand{\uline}{\underline}
+
+\renewcommand{\refname}{\normalfont\selectfont\normalsize {\large \color{Gray}{references}}}
+
+\renewcommand{\refname}{\normalfont\selectfont\normalsize {\large \color{Gray}{references}}}
+
+\newcommand{\MWFClass}{%
+\calday[Monday]{\classday} % Monday
+\skipday % Tuesday (no class)
+\calday[Wednesday]{\classday} % Wednesday
+\skipday % Thursday (no class)
+\calday[Friday]{\classday} % Friday
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\MWClass}{%
+\calday[Monday]{\classday} % Monday
+\skipday % Tuesday (no class)
+\calday[Wednesday]{\classday} % Wednesday
+\skipday % Thursday (no class)
+%\calday[Friday]{\classday} % Friday
+\skipday % Friday no class
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\TuThuClass}{%
+\skipday % Monday (no class)
+\calday[Tuesday]{\classday} % Tuesday
+\skipday % Wednesday (no class)
+\calday[Thursday]{\classday} % Wednesday
+\skipday % Friday no class
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\Holiday}[2]{%
+\options{#1}{\noclassday}
+\caltext{#1}{#2}
+}
+
+\renewcommand{\calprintdate}{\textbf{\monthname\ \ordinaldate}}
+\renewcommand{\calprintclass}{Lecture \theclassnum}
+
+\begin{document}
+\pagenumbering{gobble}
+% \thispagestyle{fancy}
+\begin{center}
+	{\Large \color{Black}{AMAT 362---Probability for Statistics---Spring 2021 Syllabus}}
+	\noindent\rule{\textwidth}{0.1pt}
+
+	\textbf{Instructor:} Prof.~Justin M.~Curry \quad \textbf{Office:} ES 120C \quad \textbf{Email:} \url{jmcurry@albany.edu}
+\end{center}
+
+\noindent\textbf{Pre-Requisites:} Calculus of Several Variables (AMAT 214) and Introduction to Proofs (AMAT 299).
+
+\noindent\textbf{Lecture Place and Times:} \emph{ONLINE} on \emph{MW 11:40-1:00pm}
+
+\noindent\textbf{Office Hours Place and Times:} By appointment with Brendan Mallery \url{bmallery@albany.edu} or me.
+
+\noindent\textbf{Course Texts:} The following texts are recommended:
+\begin{itemize}
+  \item \emph{Introduction to Probability} by Anderson, Sepp\"{a}l\"{a}inen, Valk\'{o} [ASV].
+  \item \emph{Introduction to Probability} by Grinstead and Snell [GS];
+  \item \emph{Probability} by Pittman [Pit];
+  \item \emph{Introduction to Probability, 2nd edition} Bertsekas and Tsitsiklis [BT]
+\end{itemize}
+
+\noindent\textbf{Course Topics:}
+This course is meant to serve as a calculus-based introduction to probability that provides a foundation for statistics as covered in AMAT 363.
+Additionally, this course is meant to serve as preparation for the \emph{Society of Actuaries} Exam P. The topics for the P exam are listed below, but I will follow my own selection of topics and spend more or less time focusing on topics that I think are important.
+
+\begin{enumerate}
+	\item General Probability: set theory, Venn diagrams, sample space and events; definition of probability measure, basic axioms; addition and multiplication rules; independence versus mutually exclusive events; calculation of conditional probabilities; combinatorics; Bayes' theorem and law of total probability.
+	\item Univariate Random Variables: discrete and continuous univariate random variables (RVs) including binomial, negative binomial, geometric, hypergeometric, Poisson, uniform, exponential, gamma, normal, mixed distributions and their applications; PDFs and CDFs of these RVs; expectation/mean, mode, median, percentile and higher moments; variance, standard deviation, coefficient of variation; probability and moment generating functions; sums of independent RVs, such as Poisson and Normal; transforms.
+	\item  Multivariate Random Variables: joint probability functions (PFs), PDFs, CDFs; conditional and marginal PFs, PDFs, CDFs and moments for these; covariance and correlation; transforms of multivariate RVs; probabilities and moments for linear combinations of RVs; central limit theorem.
+\end{enumerate}
+
+\noindent\textbf{Grading Schema:}
+
+\begin{itemize}
+	\item $45 \%$ Lecture Worksheets
+	\item $20 \%$ Final Exam
+	\item $15 \%$ Exam 1
+	\item $15 \%$ Exam 2
+  \item $5\%$ Participation and Attendance
+\end{itemize}
+
+\noindent\textbf{Attendance and Missed Work Policy:}
+Attendance is required unless a reasonable excuse is provided to the instructor via email. Worksheets corresponding to lectures 1-8 will be handed in as a packet before the first exam. Worksheets corresponding to lectures 9-16 will be handed in before the second exam. Worksheets corresponding to lectures 17-24 must be handed in before the final exam.
+
+\noindent\textbf{Academic Dishonesty Policy:}
+
+\begin{center}
+\fbox{\fbox{\parbox{6.5in}{\centering
+\emph{Use of Chegg.com and similar websites is strictly prohibited. Students who post questions from exams or worksheets on online forums such as Chegg will get an automatic 5\% subtracted from their overall grade for the first question posted. A 10\% subtraction will occur for the second posted question and an automatic failing grade will be given on the third offense.}
+
+\textbf{THREE STRIKES AND YOU'RE OUT!}}}}
+\end{center}
+
+
+
+\newpage
+
+\begin{center}
+
+
+\textbf{The final exam will occur remotely between Wednesday, May 12, 2021 and Saturday, May 15, 2021.}
+
+The format of the exams are still to be determined.
+
+\begin{calendar}{2/01/2021}{15} % Put date of Monday of first week of classes and number of weeks
+\setlength\calboxdepth{.25in}
+\setlength\calwidth{\textwidth}
+\MWClass
+
+
+
+
+% schedule
+%\caltexton{1}{$\heartsuit$\textit{NO ClASS---MLK DAY}$\heartsuit$}
+% \caltexton{1}{L1:Admin + \S 1.1}
+% \caltextnext{L2: \S 1.2}
+% \caltextnext{L3: \S 1.3, 1.4}
+% \caltextnext{L4: \S 1.4, 1.5}
+% \caltextnext{L5: \S 2.1}
+% \caltextnext{\S 2.2}
+% \caltextnext{\S 2.3}
+% \caltextnext{\S 2.4}
+% \caltextnext{\S 2.5}
+% \caltextnext{\S 3.1}
+% \caltextnext{\S 3.2}
+% \caltextnext{\S 3.3}
+% \caltextnext{\S 3.4}
+% \caltextnext{\S 3.5}
+% \caltextnext{\S 4.1 - not on M1}
+% \caltextnext{Review for Midterm 1}
+% \caltextnext{}%Midterm
+% \caltextnext{\S 4.2}
+% \caltextnext{\S 4.3}
+% \caltextnext{\S 4.4}
+% \caltextnext{\S 4.5}
+% \caltextnext{\S 4.6}
+% \caltextnext{\S 5.2}
+% \caltextnext{}%Spring Break
+% \caltextnext{}%Spring Break
+% \caltextnext{}%Spring Break
+% \caltextnext{\S 6.1}
+% \caltextnext{\S 6.2}
+% \caltextnext{\S 6.3}
+% \caltextnext{\S 6.4}
+% \caltextnext{\S 7.1}
+% %\caltextnext{\S 7.2}
+% \caltextnext{\S 8.1}
+% \caltextnext{\S 8.2}
+% \caltextnext{\S 8.3}
+% \caltextnext{\S 8.4}
+% \caltextnext{\S 8.5 or catch-up}
+% \caltextnext{Review for Midterm 2}
+% \caltextnext{}%Midterm
+% \caltextnext{\S 9.1}
+% \caltextnext{\S 9.2/9.3}
+% \caltextnext{\S 10.1}
+% \caltextnext{\S 10.2}
+% \caltextnext{\S 10.3}
+% \caltextnext{\S 10.4}
+% \caltextnext{Final Review Lecture}
+% \caltextnext{[dGS] \S 5.2}
+% \caltextnext{[dGS] \S 5.3}
+
+%Exams
+%\caltext{3/1/2021}{$\spadesuit$\textbf{Midterm 1 Answers}$\spadesuit$}
+%\caltext{4/17/2020}{$\spadesuit$\textbf{Midterm 2}$\spadesuit$}
+% \caltext{3/1/2018}{$\clubsuit$\textbf{Quiz 3}$\clubsuit$}
+
+% \caltext{3/8/2018}{$\spadesuit$\textbf{MIDTERM}$\spadesuit$}
+
+% \caltext{3/29/2018}{$\clubsuit$\textbf{Quiz 4}$\clubsuit$}
+% \caltext{4/12/2018}{$\clubsuit$\textbf{Quiz 5}$\clubsuit$}
+% \caltext{4/26/2018}{$\clubsuit$\textbf{Quiz 6}$\clubsuit$}
+
+% Holidays
+\Holiday{3/1/2021}{$\spadesuit$\textbf{Midterm 1}$\spadesuit$}
+\Holiday{3/3/2021}{$\heartsuit$\textit{NO ClASS}$\heartsuit$}
+\Holiday{4/5/2021}{$\spadesuit$\textbf{Midterm 2}$\spadesuit$}
+% \Holiday{3/16/2020}{$\heartsuit$\textit{SPRING BREAK}$\heartsuit$}
+% \Holiday{3/18/2020}{$\heartsuit$\textit{SPRING BREAK}$\heartsuit$}
+%\Holiday{3/20/2020}{$\heartsuit$\textit{SPRING BREAK}$\heartsuit$}
+\Holiday{5/10/2021}{$\spadesuit$\textbf{Final Review}$\spadesuit$}
+\Holiday{5/12/2021}{$\heartsuit$\textit{NO MORE CLASSES}$\heartsuit$}
+%\Holiday{5/8/2020}{$\heartsuit$\textit{NO MORE CLASSES}$\heartsuit$}
+% \options{3/13/2018}{\noclassday}
+% \options{3/13/2018}{\noclassday}
+% \options{5/10/2018}{\noclassday}
+
+\end{calendar}
+
+\textbf{The final exam will occur remotely between Wednesday, May 12, 2021 and Saturday, May 15, 2021.}
+
+\end{center}
+
+\end{document}
