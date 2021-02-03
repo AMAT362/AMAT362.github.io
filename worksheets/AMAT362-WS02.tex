@@ -1,0 +1,64 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362 Lecture 2 Worksheet}
+\date{Due: February 8th, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+Questions marked with a $\star$ have subjective answers and will only be graded for completeness.
+\begin{questions}
+	\question[1] A \textbf{byte} consists of 8 \textbf{bits}. A bit is either 0 or 1. How many different bytes are there?
+	\question[3] There are 26 letters in the alphabet. For this question we will not distinguish between up and lower letters.
+	\noaddpoints
+	\begin{parts}
+	\part[1] How many 5 letter words are there? Assume any string of 5 letters is a word.
+	\part[1] Suppose I select a 5 letter word uniformly at random. What's the probability that I get \texttt{fffff}?
+	\part[1] Suppose I select a 5 letter word uniformly at random. What's the probability that the word I get starts \emph{and} ends with an \texttt{f}?
+	\end{parts}
+	\addpoints
+	\question[2] Suppose I have a bag with 7 colors, corresponding to the 7 colors of a rainbow: red, orange, yellow, green, blue, indigo and violet. Suppose I sample without replacement from the bag 7 times. How many possible sequences of colored marbles are possible? What does this have to do with factorial?
+	\question[2] $\star$ When someone says ``Pick a number at random.'' What do they really mean? Assume a number is any number greater than 0.
+\question[5] On a standard QWERTY keyboard there are
+\begin{itemize}
+	\item 10 digits: 0123456789
+	\item 26 lower case letters: abcdefghijklmnopqrstuvwxyz
+	\item 26 upper case letters: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+	\item 33 special characters: \begin{verbatim}`~!@#$%^&*()-_=+[]\{}|;':",./<>? }\end{verbatim}
+	Note that the space symbol is the 33rd character after `?'.
+\end{itemize}
+
+\noaddpoints
+\begin{parts}
+\part[2] Assuming that a tweet on Twitter is limited to 240 characters of the above form, how many tweets are possible? For this part assume that any tweet that is shorter than 240 is automatically completed with spaces.
+
+\part[3] Now compute how many tweets are possible if no empty tweets are allowed, but a tweet shorter than 240 characters is different from a tweet that is filled out with the space character.
+
+\end{parts}
+
+\end{questions}
+
+\end{document}
