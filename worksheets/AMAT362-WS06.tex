@@ -1,0 +1,130 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 06}
+\date{Due on Monday February 22nd, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+\begin{questions}
+\question[5]
+Assume the following (overly simplified) statements are true: 
+\begin{itemize}
+	\item In the US, 50\% of the population are men and 50\% of the population are women. 
+	\item 10\% of the population in the US practices yoga.
+	\item Of yoga practitioners, 72\% are women and 28\% are men.
+\end{itemize}
+\noaddpoints
+\begin{parts}
+\part[1] Suppose that I'm told a person practices yoga, what is the probability that they are a woman?
+
+\vspace{1in}
+
+\part[1]  Are the events of being a woman and practicing yoga independent?
+
+\vspace{1in}
+
+\part[2]  Suppose I randomly select a woman from the US population. What is the probability that they practice yoga?
+
+\vspace{1in}
+
+\part[1]  What's the probability of a yoga class with five people in it consisting of all men?
+
+\vspace{1in}
+
+\end{parts}
+\addpoints
+
+\newpage
+\question[4]
+\emph{Conditional Independence and Testing Twice for a Disease:} For two events $E_1$ and $E_2$ we sometimes write
+\[
+	P(E_1 \cap E_2) = P(E_1 \text{ and } E_2) \qquad \text{as} \qquad P(E_1E_2)
+\]
+in order to save space.
+$E_1$ and $E_2$ are independent if $P(E_1 E_2)=P(E_1) P(E_2)$.
+Furthermore, we say $E_1$ and $E_2$ are \emph{conditionally independent given $B$} if 
+\[
+	P(E_1 E_2 \mid B)= P(E_1\mid B) P(E_2 \mid B).
+\]
+An example of conditional independence occurs when we re-run a test for a disease $D$.
+The probability of two positive tests assuming you have the disease can be computed as 
+\[
+	P(++\mid D)=P(+\mid D) P(+\mid D) = P(+ \mid D)^2
+\]
+because each test is performed independently, even assuming you have the disease $D$.
+
+For this question, assume the following is true:
+\begin{itemize}
+	\item The probability that a randomly selected person has disease $D$ is $0.5\%$.
+	\item $P(+\mid D)=96\%$
+	\item $P(+ \mid D^c) = 2\%$
+\end{itemize}
+\noaddpoints
+\begin{parts}
+\part[2] Assuming someone tests positive for the disease $D$, what's the probability that they actually have disease $D$?
+
+\vspace{1.5in}
+
+\part[2] Assuming someone tests positive \emph{twice} for a disease, what's the probability that they actually have disease $D$?
+\vspace{1.75in}
+
+\end{parts}
+\addpoints
+
+\question[2] Suppose I have two urns, $U_1$ has two red balls and one white ball and $U_2$ has two red balls and two white balls.
+I select an urn uniformly at random, and draw out a red ball. What's the probability that I selected $U_1$?
+
+\vspace{1in}
+
+\question[1] Suppose that $P(A)=1/3$ and $P(B)=1/3$ and $P(A B^c)=2/9$. Are $A$ and $B$ independent?
+
+\vspace{1in}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=3in]{component-in-series}
+\caption{Two Components in Series}
+\end{figure}
+
+\question[2] Suppose that in an electrical device with two components in \emph{series}, the device works only if both components $C_1$ and $C_2$ work. Say the probability of each component failing on a given day is $10\%$ and $5\%$ respectively. What's the probability that the device works on a given day?
+
+\vspace{1.2in}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=2in]{component-in-parallelv2}
+\caption{Two Components in Parallel}
+
+\end{figure}
+
+\question[2] Suppose that in an electrical device with two components in \emph{parallel}, the device works only if either component $C_1$ or $C_2$ works. Say the probability of each component failing on a given day is $10\%$ and $5\%$ respectively. What's the probability that the device works on a given day?
+
+\end{questions}
+
+\end{document}
