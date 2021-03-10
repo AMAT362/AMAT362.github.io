@@ -1,0 +1,108 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 10}
+\date{Due on Monday, March 15th, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+\begin{questions}
+
+\question[3] Consider the following game. 
+You toss a fair coin 3 times. Every time the coin lands heads, you win \$3, every time it lands tails, you win nothing. 
+You have to pay \$5 to play. Let $X$ denote the number of heads out of 3 tosses of the coin. Let $W$ denote the winnings from playing this game, accounting for the cost to play.
+
+\noaddpoints
+\begin{parts}
+\part[1] Write $W$ as a function of the random variable $X$.
+\vspace{.75in}
+
+\part[1] What's the expectation of $W$? Should you play this game?
+
+\vspace{1in}
+
+\part[1] Find the distribution of $Y=|X-1|$.
+
+\vspace{1in}
+\end{parts}
+\addpoints
+
+\question[6] Let $X$ and $Y$ denote the numbers obtained from two draws from a hat, which contains four tickets $1, 2, 3$ and $4$, written on them.
+
+\noaddpoints
+\begin{parts}
+\part[2] Write down the joint distribution table for $X$ and $Y$, assuming the draws are made \emph{without} replacement. Calculate the probability $P(X\leq Y)$.
+\vspace{1.5in}
+
+\part[1] Assuming the draws are made without replacement, what is the probability $P(X=Y)$?
+\vspace{.75in}
+
+\part[2] Write down the joint distribution table for $X$ and $Y$, assuming the draws are made \emph{with} replacement. Calculate the probability $P(X\leq Y)$.
+\vspace{1.5in}
+
+\part[1] Compute the expectation of $E(X+Y)$ for both part (a) and part (c). How do they compare?
+
+\vspace{1in}
+\end{parts}
+\addpoints
+
+\question[6] Let $X_1$ and $X_2$ be the numbers associated to two rolls of a fair 6-sided die. Let $Y_1=\max\{X_1,X_2\}$ denote the maximum value and let $Y_2=\min\{X_1,X_2\}$ denote the minimum value of these two rolls.
+
+\noaddpoints
+\begin{parts}
+\part[2] Write down the joint distribution table for $Y_1$ and $Y_2$.
+\vspace{1.75in}
+
+\part[2] Write down the PMF of $Z=X_1\cdot X_2$ the multiplication of the values of the two rolls.
+\vspace{1.25in}
+
+\part[2] Compute the expectation $E(Z)$ and the expectation $E(Y_1+Y_2)$. 
+\vspace{1.25in}
+\end{parts}
+\addpoints
+
+\question[3] A fair coin is tossed 3 times. Let $X$ be the number of heads in the first two tosses. Let $Y$ be the number of heads in the last two tosses.
+
+\noaddpoints
+\begin{parts}
+\part[1] Write down the joint distribution table for $X$ and $Y$.
+\vspace{1.5in}
+
+\part[1] Are $X$ and $Y$ independent?
+\vspace{1in}
+
+\part[1] Find the distribution of $X+Y$. 
+\vspace{1.25in}
+\end{parts}
+\addpoints
+
+\question[2] A box contains 8 tickets. Two are marked 1, two are marked 2, two are marked 3, and two are marked 4. Tickets are drawn uniformly at random from the box without replacement until a number appears that has appeared before. Let $X$ be the number of draws that are made. Make a table to display the probability distribution of $X$.
+
+\end{questions}
+
+\end{document}
