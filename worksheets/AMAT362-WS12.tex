@@ -1,0 +1,112 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 12}
+\date{Due on Monday, March 22nd, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+\begin{questions}
+
+\question[5] \emph{This problem will be done in class, but make sure to write the answers down!} 
+A fair coin is flipped 3 times. Let $X$ be the indicator random variable that indicates if the first flip was a tails. Let $Y$ be the total number of tails among the 3 flips.
+
+\noaddpoints
+\begin{parts}
+\part[1] Write down the joint PMF/distribution table for $(X,Y)$.
+\vspace{1.5in}
+
+\part[1] Are $X$ and $Y$ independent? Say why or why not.
+\vspace{.7in}
+
+\part[1] Suppose you win \$3 for every tails that comes up, moreover, if the first flip is tails, you get \$6 for every tails, including the first one. Write down your winnings $W$ as a function of $X$ and $Y$.
+\vspace{.7in}
+
+\part[1] Compute the expected winnings $E[W]$.
+\vspace{1.5in}
+
+\part[1] Compute the variance and standard deviation of your winnings $\text{Var}(W)$ and $SD(W)$.
+\vspace{1.5in}
+\end{parts}
+\addpoints
+
+\question[2] A card is drawn at random from a deck consisting of cards numbered 2
+through 10. A player wins 1 dollar if the number on the card is odd and
+loses 1 dollar if the number if even. What is the expected value of their winnings?
+
+\vspace{1.5in}
+
+\question[3] Suppose a multiple choice test is given where every question has 4 choices for the answer. There are 60 questions on the test. 
+If someone has not studied at all and guesses uniformly at random on each question what is the expectation and variance of the number of correct answers?
+
+\vspace{1.5in}
+
+\question[4] Ten thousand people each buy a lottery ticket. Each lottery ticket costs \$1. 80 people will \$2, 19 will win \$100, 1 lucky person will win \$7000.
+Let $X$ denote profit from the game, i.e. winnings minus cost of the ticket.
+
+\noaddpoints
+\begin{parts}
+\part[1] Write down the probability mass function (PMF)/distribution table for $X$.
+
+\vspace{1.2in}
+
+\part[1] Compute $E[X]$.
+
+\vspace{1.2in}
+
+\part[2] Compute $\text{Var}(X)$ and $SD(X)$.
+
+\vspace{1.5in}
+\end{parts}
+\addpoints
+
+
+\question[6] There are 5 closed boxes in a table. In 3 of the boxes there are nice prizes. In the other 2, there are smelly socks.
+You open boxes one at a time until you open one with a prize, after which you stop. Let $X$ denote the number of boxes you open
+
+\noaddpoints
+\begin{parts}
+\part[1] Find the PMF for $X$
+
+\vspace{1in}
+
+\part[1] Compute $E[X]$.
+
+\vspace{1.2in}
+
+\part[2] Compute $\text{Var}(X)$ and $SD(X)$.
+\vspace{1.5in}
+
+\part[2] Suppose the ``nice prize'' in the three boxes is \$100, but every time you open a box without a prize, you lose \$100. Compute your \emph{expected profit} from playing this game, as well as the \emph{standard deviation in your profit.}
+\end{parts}
+\addpoints
+
+
+\end{questions}
+
+\end{document}
