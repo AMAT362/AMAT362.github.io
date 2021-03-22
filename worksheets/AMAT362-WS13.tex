@@ -1,0 +1,137 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 13}
+\date{Due on Saturday, March 27th, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+\begin{questions}
+
+\question[3] Consider the top row of Table 6 of 
+\url{https://www.cdc.gov/nchs/data/series/sr_03/sr03-046-508.pdf} 
+
+\noaddpoints
+\begin{parts}
+
+\part[1] Does weight for 20+ year old males seem exactly normally distributed? Say why or why not.
+
+\vspace{.7in}
+
+\part[2] Assume that the average weight of an adult US man is 200lbs and the standard deviation is 45lbs. Compute the average and standard deviation when weight is measured in kilos and British stones.
+
+\vspace{1.5in}
+
+\end{parts}
+\addpoints
+
+\question[2] Suppose the average family income in a specific area is \$20,000.
+
+\noaddpoints
+\begin{parts}
+\part[1] Find an upper bound for the percentage of families with incomes at or over \$100,000.
+
+\vspace{1in}
+
+\part[2] Find a better upper bound if it is known that the standard deviation in incomes in this area is \$16,000.
+
+\vspace{1.2in}
+
+\end{parts}
+\addpoints
+
+
+\newpage
+\question[6] Repeat Question 2 when using the following real world data from Albany's South End \url{https://statisticalatlas.com/neighborhood/New-York/Albany/South-End/Household-Income}
+Let's simplify table 7 using the following list of percentages and incomes, rounded up to the nearest endpoint for the reported data.
+
+\begin{center}
+\begin{tabular}{ r|ccccccccccccc  } 
+income & 10k & 15k & 20k & 25k & 30k & 35k & 40k & 45k & 50k  & 60k & 75k & 100k & 125k \\ 
+\hline
+percent & 27\% & 17\% & 14\% & 10\% & 6 \% & 5\% & 2\% & 3\% & 0\% & 3\% & 5\% & 5\% & 3\%   \\ 
+\end{tabular}
+\end{center}
+
+Now answer these questions:
+
+\noaddpoints
+\begin{parts}
+\part[2] Compute the mean and standard deviation of household family incomes in Albany's South End.
+
+\vspace{.7in}
+
+\part[2] Using the method in Question 2 Part A, compute an upper bound on the incomes at or over 100k. How does this compare with the actual percentage?
+
+\vspace{1.2in}
+
+\part[2] Using the method in Question 2 Part B, compute an upper bound on the incomes at or over 100k. How does this compare with the actual percentage?
+
+\vspace{1.5in}
+
+\end{parts}
+\addpoints
+
+\question[2] For US men, the average height is 69.1 inches with a standard deviation of 2.9 inches. For US women, the average height is 63.7 inches with a standard deviation of 2.5 inches. Depending on your chosen gender, compute your Z-score for your height as well as the lower tail probability for that height. What percentile are you in?
+
+\vspace{1.5in}
+
+\newpage
+\question[4] Repeat the calculation from the end of lecture. You may find the following information useful: for the uniform distribution on $\{1,2,\ldots, n\}$ the first and second moments are $(n+1)/2$ and $(n+1)(2n+1)/6$.
+
+\noaddpoints
+\begin{parts}
+\part[2] How many times do you need to roll a 4-sided die to be at least 95\% sure that the empirical mean will be within .5 of the true mean?
+
+\vspace{2in}
+
+\part[2] How many times do you need to roll an 8-sided die to be at least 95\% sure that the empirical mean will be within .5 of the true mean?
+
+\vspace{2in}
+
+\end{parts}
+\addpoints
+
+\question[3] A random variable $X$ has an expectation of 10 and a standard deviation of 5.
+
+\noaddpoints
+\begin{parts}
+\part[2] Find the smallest upper bound you can for $P(X\geq 20)$.
+
+\vspace{1.5in}
+
+\part[1] Could $X$ be a binomial random variable?
+
+\vspace{1in}
+
+\end{parts}
+\addpoints
+
+\end{questions}
+
+\end{document}
