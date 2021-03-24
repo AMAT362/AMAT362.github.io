@@ -1,0 +1,157 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 14}
+\date{Due on Tuesday, March 30th, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+
+
+Most of these questions are drawn from Grinstead and Snell's Introduction to Probability:
+
+\url{https://math.dartmouth.edu/~prob/prob/prob.pdf}
+
+\begin{questions}
+\question \emph{Not Graded. We'll do this in class.} 
+Let $S_{100}$ be the number of heads that turn up in 100 tosses of a fair coin. Use
+the Central Limit Theorem to estimate
+\noaddpoints
+\begin{parts}
+
+\part $P(S_{100} \leq 45)$
+\vspace{1in}
+\part $P(45 < S_{100} < 55)$
+\vspace{1in}
+\part $P(S_{100} > 63)$
+\vspace{1in}
+\part $P(S_{100} < 57)$
+\vspace{1in}
+\end{parts}
+
+\question[2] A fair coin is flipped 400 times.
+Determine the number $x$ such that the probability that the number of heads is between $200 - x$ and $200 + x$ is approximately .80.
+
+\vspace{1.5in}
+
+\question[2] A noodle machine in Spumoni’s spaghetti factory makes about 5 percent defective noodles even when properly adjusted. The noodles are then packed
+in crates containing 1900 noodles each. A crate is examined and found to
+contain 115 defective noodles. What is the approximate probability of finding
+at least this many defective noodles if the machine is properly adjusted?
+
+\vspace{1.7in}
+
+\question[4] A restaurant feeds 400 customers per day. On the average 20 percent of the
+customers order apple pie.
+\noaddpoints
+\begin{parts}
+
+\part[2] Give a range (called a 95 percent confidence interval) for the number of
+pieces of apple pie ordered on a given day such that you can be 95 percent
+sure that the actual number will fall in this range.
+
+\vspace{1.5in}
+
+\part[2] How many customers must the restaurant have, on the average, to be at
+least 95 percent sure that the number of customers ordering pie on that
+day falls in the 19 to 21 percent range?
+
+\vspace{1.5in}
+
+\end{parts}
+\addpoints
+
+\question[2] Once upon a time, there were two railway trains competing for the passenger
+traffic of 1000 people leaving from Chicago at the same hour and going to Los
+Angeles. Assume that passengers are equally likely to choose each train. How
+many seats must a train have to assure a probability of .99 or better of having
+a seat for each passenger?
+
+\vspace{1.5in}
+
+\question[2] A die is rolled 24 times. Use the Central Limit Theorem to estimate the
+probability that
+
+\noaddpoints
+\begin{parts}
+\part[1] the sum is greater than 84.
+
+\vspace{1in}
+
+\part[1] the sum is equal to 84.
+
+\vspace{1.2in}
+
+\end{parts}
+\addpoints
+
+
+\question[2] A random walker starts at 0 on the x-axis and at each time unit moves 1
+step to the right or 1 step to the left with probability 1/2. Estimate the
+probability that, after 100 steps, the walker is more than 10 steps from the
+starting position.
+
+\vspace{1.5in}
+
+\question[4] A piece of rope is made up of 100 strands. Assume that the breaking strength
+of the rope is the sum of the breaking strengths of the individual strands.
+Assume further that this sum may be considered to be the sum of an independent trials process with 100 experiments each having expected value of 10
+pounds and standard deviation 1. Find the approximate probability that the
+rope will support a weight
+\noaddpoints
+\begin{parts}
+\part[2] of 1000 pounds.
+
+\vspace{1.5in}
+
+\part[2] of 970 pounds.
+
+\vspace{1.2in}
+
+\end{parts}
+\addpoints
+
+
+\question[4] This is a question where we compare bounds produced by Chebyshev's inequality and the central limit theorem. You may find the following information useful: for the uniform distribution on $\{1,2,\ldots, n\}$ the first and second moments are $(n+1)/2$ and $(n+1)(2n+1)/6$.
+
+\noaddpoints
+\begin{parts}
+\part[2] Let $A_n$ be the average face value after rolling my 12-sided die $n$ times. Using Chebyshev's inequality, how large does $n$ need to be to make $Pr(|A_n-\mu|\geq 1)\leq .05$?
+
+\vspace{2in}
+
+\part[2] Repeat Part A, but by using the central limit theorem.
+
+\vspace{2in}
+
+\end{parts}
+\addpoints
+
+\end{questions}
+
+\end{document}
