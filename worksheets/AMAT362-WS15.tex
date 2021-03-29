@@ -1,0 +1,130 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 15}
+\date{Due on Saturday, April 3rd, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+
+
+
+
+\begin{questions}
+
+\question[1] A random number generator produces numbers between 1 and 10,000 on each day. What's the probability that after one year no numbers have been repeated?
+
+\vspace{1.2in}
+
+\question[3] 
+A different random number generator produces 10,000 digits selected uniformly at random from the set $\{0,1,2,3,4,5,6,7,8,9\}$.
+\noaddpoints
+\begin{parts}
+
+\part[1] What's the probability that the digit 3 is produced less than 932 times.
+\vspace{1.5in}
+\part[1] What's the probability that the digit 3 is produced 1000 times exactly?
+\vspace{1.5in}
+\part[1] What's the probability that the digit 3 is produced exactly 932 times?
+\vspace{1.5in}
+\end{parts}
+
+\newpage
+
+\question[2] The PMF for a Poisson random variable is $$\text{Poisson}(\lambda,k) = \frac{\lambda^k}{k!} e^{-\lambda} \qquad \text{for} \qquad k\geq 0$$ and zero otherwise.
+Verify that this PMF satisfies the two properties every PMF must satisfy:
+\begin{enumerate}
+	\item[(i)] {\bf Non-negativity} $p_X(k)\geq 0$ for all $k$
+	\item[(ii)] {\bf Normalization:} $\sum_k p_X(k) =1$
+\end{enumerate}
+\vspace{1.5in}
+
+\question[4] Suppose I'm making a batch of 50 cookies with 400 chocolate chips.
+
+\noaddpoints
+\begin{parts}
+\part[1] What's the average number of chocolate chips each cookie will get?
+\vspace{1.2in}
+
+\part[1] What's the probability that a particular chocolate chip makes it into a particular cookie?
+\vspace{1.2in}
+
+\part[1] What's the approximate probability that a particular cookie gets no chocolate chips? \emph{Hint:} Your answer should have $e$ in it.
+
+\vspace{1.2in}
+
+\part[1] What's the approximate probability that a particular cookie has 5 chocolate chips?
+\vspace{1.2in}
+
+\end{parts}
+\addpoints
+
+\newpage
+\question[4] On average, only 1 in 1000 people have a particular rare blood type.
+\noaddpoints
+\begin{parts}
+
+\part[2] Find the probability that in a city of 10,000 people, no has this blood type.
+
+\vspace{1.5in}
+
+\part[2] How many people would have to be tested to give a probability greater than 1/2 of finding at least one person with this blood type.
+
+\vspace{2in}
+
+\end{parts}
+\addpoints
+
+\question[2] Back in the old days, phone calls were connected through a switchboard. If I wanted to call someone in Albany, I would dial the operator and tell them who I wanted to talk to and they would then connect my phone call to that specific person by unplugging and plugging cables that patched me into that person's landline.
+Let's say that a switchboard receives one call per second with probability .01. Give a good approximation that the operator will miss at most two phone calls if she takes a 5 minute coffee break.
+
+\vspace{1.5in}
+
+
+\newpage
+\question[4] A dormitory has $n$ students, all of whom like to gossip. One of the students hears a rumor and tells it to one of the other $n-1$ students. Subsequently each student who hears the rumor tells it to a student picked at random from the dormitory (excluding, of course, themself and the person they heard the rumor from). Let $p_r$ be the probability that the rumor is told $r$ times without coming back to a student who has already heard the rumor before. For example $p_1=1$ and $p_2=1$ because neither the first or second student to first hear the rumor is going to repeat it back to them. Also note that $p_n=0$ by the pigeonhole principle.
+
+\noaddpoints
+\begin{parts}
+\part[2] Find a formula for $p_r$ for $r$ between 3 and $n-1$.
+
+\vspace{2in}
+
+\part[2] Estimate this probability for $n=300$ and $r=30$.
+
+\vspace{1.5in}
+
+\end{parts}
+\addpoints
+
+
+
+
+\end{questions}
+
+\end{document}
