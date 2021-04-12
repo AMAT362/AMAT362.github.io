@@ -1,0 +1,119 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 17}
+\date{Due Saturday, April 17, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+
+
+
+
+\begin{questions}
+
+\question[1] Suppose a number is generated uniformly at random from the unit interval $(0,1)$, i.e. $X\sim \text{Unif}(0,1)$. What's the probability of $X$ being within 2 decimal places of .35, after rounding? For example, .349 would round up to .35 and .353 would round down.
+
+\vspace{1.2in}
+
+\question[1] Repeat the question above except under the assumption that $X\sim \text{Norm}(0,1)$ distribution, i.e. normally distributed with mean 0 and variance 1.
+
+\vspace{1.2in}
+
+\question[5] Suppose $X$ is a random variable whose density is $f(x)=cx(1-x)$ for $0<x<1$ and $f(x)=0$ otherwise.
+
+\noaddpoints
+\begin{parts}
+
+\part[1] Find the value of $c$ in order for this to be a valid PDF.
+\vspace{1.2in}
+\part[1] $P(X\leq 1/2)$
+\vspace{1.2in}
+\part[1] $P(X\leq 1/3)$
+\vspace{1.2in}
+\part[2] Make a drawing of the function $F(s):=\int_{-\infty}^s f(x) dx$, which is called the \emph{cumulative distribution function (CDF)} of $X$.
+\vspace{2in}
+\end{parts}
+\addpoints
+
+\question[4] \emph{We'll do this in class, but please copy down the derivations and understand them!}
+Recall that $X$ is exponentially distributed with parameter $\lambda$, written $X\sim \text{Exp}(\lambda)$, if its PDF is $f_X(x)=\lambda e^{-\lambda x}$ for $x\geq 0$ and is zero otherwise.
+
+ \noaddpoints
+\begin{parts}
+\part[1] Derive a formula for $E(X)$ in terms of $\lambda$.
+\vspace{1.5in}
+\part[1] Derive a formula for $V(X)$ in terms of $\lambda$.
+\vspace{1.75in}
+
+\part[1] Derive and draw the CDF for $X$.
+\vspace{2in}
+\newpage
+\part[1] Derive a formula for the median of $X$ in terms of $\lambda$. This is also called the \emph{half-life}, which measures the amount of time needed for a sample of radioactive material to degrade by half or for some chemical to degrade or be absorbed by half. Bonus question: what is the half-life of caffeine?
+\vspace{1.2in}
+\end{parts}
+\addpoints
+
+
+\question[2] Suppose a particular kind of radioactive element has a half-life of 1 year. Find
+
+ \noaddpoints
+\begin{parts}
+\part[1] The probability that an atom of this type survives for at least 5 years.
+\vspace{1.2in}
+\part[1] The time at which a sample of this element decays to 10\% of its original purity.
+\vspace{1.2in}
+\end{parts}
+\addpoints
+
+\question[2] Suppose the length $L$ of a phone call is exponentially distributed with $\mu=10$ minutes.
+ \noaddpoints
+\begin{parts}
+\part[1] Compute $P(L\geq 20)$
+\vspace{1.2in}
+\part[1] Compute $P(8\leq L \leq 22)$
+\vspace{1.2in}
+\end{parts}
+\addpoints
+
+\newpage
+
+\question[3] Measurements on the mass of a metal part produced at a factory are IID with $\mu=12$ grams and $\sigma=1.1$ grams.
+ \noaddpoints
+\begin{parts}
+\part[1] Find the chance that a single measurement is between 11.8 and 12.2 grams, assuming the mass varies according to a normal distribution.
+\vspace{1.5in}
+\part[1] Estimate the chance that the average of 100 measurements is between 11.8 and 12.2 grams. Answer this is as well: Is it necessary to assume that each measurement is normally distributed?
+\vspace{1.7in}
+\end{parts}
+\addpoints
+
+
+\end{questions}
+
+\end{document}
