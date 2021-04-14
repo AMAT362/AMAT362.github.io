@@ -1,0 +1,138 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 18}
+\date{Due Monday, April 19, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+
+
+
+
+\begin{questions}
+
+\question[1] If a part has a lifetime modeled by $T\sim \text{Exp}(\lambda)$, prove the \textbf{memoryless property}, which says that
+\[
+	P(T>a + b \mid T > a) = P(T >b)
+\]
+According to Pitman (p. 281) this is like saying 
+\begin{quote}
+\centering
+\emph{``As long as a part is working, it's as good as new!''}
+\end{quote}
+
+\vspace{1.2in}
+
+\question[4] One of the reasons exponential RVs are important is that they model the time \emph{between} earthquakes. Suppose the time to the next earthquake is exponentially distributed with rate 1 per year. Find the probability that the next earthquake happens
+
+\noaddpoints
+\begin{parts}
+
+\part[1] within one year;
+\vspace{1.5in}
+\part[1] within six months;
+\vspace{1.5in}
+\part[1] after two years;
+\vspace{1.5in}
+\part[1] after two years, given that one year has already gone by without an earthquake.
+\vspace{1.5in}
+\end{parts}
+\addpoints
+
+\question[5] Suppose component lifetimes are exponentially distributed with mean 10 hours. Find
+
+ \noaddpoints
+\begin{parts}
+\part[1] the probability that a component survives 20 hours;
+\vspace{1.5in}
+\part[1] the median component lifetime;
+\vspace{1.2in}
+
+\part[1] the SD of component lifetime;
+\vspace{1.2in}
+
+\part[1] The probability that the average lifetime of 100 independent components exceeds 11 hours;
+\vspace{1.5in}
+
+\newpage
+\part[1] The probability that the average lifetime of 2 independent components exceeds 11 hours;
+\vspace{1.5in}
+\end{parts}
+\addpoints
+
+
+\question[3] A store is open from 9am-6pm and averages 45 customers a day.
+
+ \noaddpoints
+\begin{parts}
+\part[1] Compute the probability of no customers arriving between 9 and 10am. Call this event $A_1$.
+\vspace{1.5in}
+\part[1] Compute the probability of 3 customers arriving between 10 and 10:30am. Call this event $A_2$.
+\vspace{1.5in}
+\part[1] Compute the probability $P(A_1\cap A_2)$.
+\vspace{1.5in}
+\end{parts}
+\addpoints
+
+\question[3] For this problem you'll want to know that the probability distribution for $T_r$, which is the time of the $r^{th}$ arrival in a Poisson Point Process with rate $\lambda$, or, alternatively, the distribution of $W_1+\cdots + W_r$ the sum of r IID exponentials, has PDF
+\[
+f_{T_r}(t) = \frac{\lambda^r t^{r-1}}{(r-1)!} e^{-\lambda t} \qquad \text{for } t\geq 0 
+\]
+and has mean $r/\lambda$ and standard deviation $\sqrt{r}/\lambda$.
+
+Suppose calls are arriving at a call center with an average rate of 1 call per second. Find:
+ \noaddpoints
+\begin{parts}
+\part[1] the probability that the fourth call after $t=0$ arrives within 2 seconds of the third call;
+\vspace{1.2in}
+\part[1] the probability that the fourth call arrives by times $t=5$ seconds;
+\vspace{1in}
+\part[1] the expected time at which the fourth call arrives.
+\vspace{1in}
+\end{parts}
+\addpoints
+
+
+
+\question[4] Transistors are produced by one machine have a lifetimes that is exponentially distributed with mean $100$ hours. Transistors produced by a second machine have lifetime with exponential distribution and mean $200$ hours. A package of 12 transistors has 4 produced by the first machine and 8 produced by the second machine. Let $X$ be the lifetime of a randomly selected transistor from this package of 12. Find:
+ \noaddpoints
+\begin{parts}
+\part[1] $P(X\geq 200 \text{ hours})$
+\vspace{1.5in}
+\part[1] $E(X)$
+\vspace{1.7in}
+\part[2] $Var(X)$
+\vspace{1.7in}
+\end{parts}
+\addpoints
+
+
+\end{questions}
+
+\end{document}
