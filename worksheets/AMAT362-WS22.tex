@@ -1,0 +1,122 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 22}
+\date{Monday May 3, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+
+
+
+\begin{questions}
+
+%We will focus on problems from the last worksheet, but here are a few ``higher dimensional'' situations worth considering.
+\question[4] Suppose $X$ and $Y$ is uniformly distributed on $\{(x,y) \mid 0 < |y| < x < 1\}$. Find
+
+\noaddpoints
+\begin{parts}
+
+\part[1] the joint density function of $X$ and $Y$;
+\vspace{1.5in}
+\part[1] that marginal densities of $X$ and $Y$;
+\vspace{1.5in}
+
+\part[1] Are $X$ and $Y$ independent?
+\vspace{1in}
+
+\part[1] Find $E(X)$ and $E(Y)$.
+\vspace{1.5in}
+\end{parts}
+\addpoints
+
+\newpage
+\question[3] A random point $(X,Y)$ from the unit square has JDF $f(x,y)=c(x^2+4xy)$ for $0<x<1$ and $0<y<1$ for some constant $c$.
+
+\noaddpoints
+\begin{parts}
+
+\part[1] Find $c$.
+\vspace{1.5in}
+\part[1] Find $P(X\leq a)$ for $0<a<1$.
+\vspace{1.7in}
+
+\part[1] Find $P(Y\leq b)$ for $0<b<1$.
+\vspace{1.7in}
+\end{parts}
+\addpoints
+
+\question[4] My washer's lifetime is an exponential RV $X$ with an expected life time of 10 years. My dryer's lifetime is an exponential RV with an expected lifetime of 12 years. Suppose both lifetimes are independent of each other.
+\noaddpoints
+\begin{parts}
+
+\part[2] Find the probability that my dryer lasts longer than my washer.
+\vspace{2.5in}
+\newpage
+\part[2] Find the distribution of the difference $D=Y-X$.
+\vspace{2in}
+\end{parts}
+\addpoints
+
+
+\question[2] Suppose I throw a dart uniformly at random at a dart board with radius $R$. Find the marginal distribution for $X$.
+\vspace{2in}
+
+\question[4] Suppose a marksman shoots at a round target. The distance of their shots from the center follows the Rayleigh distribution $f_R(r)=r e^{-r^2/2}$ for $r>0$, zero otherwise.
+\noaddpoints
+\begin{parts}
+
+\part[1] At what radius circle about the center includes $50\%$ of all shots?
+\vspace{1.2in}
+\part[1] What percent of shots can be found in twice the radius you found in part (a)?
+\vspace{1.2in}
+\newpage
+\part[2] Find the approximate average absolute distance of the shots measured from a horizontal line that passes through the center of the target?
+\vspace{1.7in}
+
+\end{parts}
+\addpoints
+
+\question[5] For $X$ and $Y$ with JDF $f(x,y)=6e^{-2x-3y}$ for $x,y>0$ and zero otherwise, find:
+\noaddpoints
+\begin{parts}
+
+\part[2] $P(X\leq x, Y\leq y)$
+\vspace{2in}
+\part[2] $f_X(x)$ and $f_Y(y)$
+\vspace{2in}
+
+\part[1] Are $X$ and $Y$ independent? Say why or why not.
+\vspace{1.2in}
+
+\end{parts}
+\addpoints
+
+\end{questions}
+
+\end{document}
