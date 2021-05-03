@@ -1,0 +1,104 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 23}
+\date{Saturday May 8, 2021}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+
+
+
+\begin{questions}
+
+\question[1] A test for a disease $D$ is 95\% accurate, but disease $D$ is only found in 1\% of the population. If a person tests positive for disease $D$, what's the probability that they actually have the disease?
+
+\vspace{1.7in}
+
+%We will focus on problems from the last worksheet, but here are a few ``higher dimensional'' situations worth considering.
+\question[4] Suppose there are 11 urns and inside each urn there are 10 balls. In the first urn there are 10 red balls. In the second urn there are 9 red balls and 1 blue ball. In the third urn there are 8 red balls and 2 blue balls. In the fourth urn there are 7 reds and 3 blues. This pattern continues to the eleventh urn, which has 10 blue balls and no red balls.
+
+Now pick one of the eleven urns uniformly at random. Denote the urn number by $U$. Now draw $N$ balls with replacement from the urn. Record the number of blue balls you draw out at as another random variable $B$.
+
+\noaddpoints
+\begin{parts}
+
+\part[1] Write down the joint PMF of $U$ and $B$, using equations and familiar distributions. Do not calculate the actual entries.
+\vspace{1.5in}
+\part[2] Suppose that $N=10$ and $B=3$, what urn number do you believe does the best job of explaining the data? Explain why.
+\vspace{2in}
+
+\part[2] Compute $E(B)$.
+\vspace{1.7in}
+
+\end{parts}
+\addpoints
+
+\question[6] Suppose I toss three coins. Some of them land heads and some of them land tails. Those that land tails I toss again. Let $X$ denote the number of heads after the first tossing and let $Y$ denote the number of heads after the second tossing, which includes the heads from the first tossing that you did not toss again. Observe that $X$ and $Y$ are RVs such that $0\leq X \leq Y \leq 3$.
+
+Write out the distribution tables and sketch the histograms for the following distributions:
+
+\noaddpoints
+\begin{parts}
+
+\part[1] The distribution of $X$;
+\vspace{1.5in}
+\part[1] The conditional distribution of $Y$ given $X=x$ for $x=0,1,2,3$;
+\vspace{2in}
+
+\part[1] The joint distribution table of $X$ and $Y$ (no need to sketch the histogram in this case);
+\vspace{1.7in}
+
+\newpage
+\part[1] The distribution of $Y$;
+\vspace{1.5in}
+
+\part[1] The conditional distribution of $X$ given $Y=0,1,2,3$;
+\vspace{1.7in}
+
+\part[1] What is the best guess of the value of $X$ given $Y=y$ for $y=0,1,2,3$? That is, for each $y$, choose $x$ that maximizes $P(X=x\mid Y=y)$.
+\vspace{1.5in}
+\end{parts}
+\addpoints
+
+\question[4] In a particular town 10\% of families have no children, 20\% have one child, 40\% have two children, 20\% have three children, and 10\% have four children. Let $T$ denote the total number of children in a randomly selected family from this town. Let $G$ denote the number of girls in a randomly selected family. Assume that children are equally likely to identify as boys or girls. 
+
+\noaddpoints
+\begin{parts}
+
+\part[3] Find the distribution for $G$. Display your answer in a table and sketch the histogram for this distribution.
+
+\part[1] Compute $E(G)$.
+
+
+\end{parts}
+\addpoints
+
+\end{questions}
+
+\end{document}
