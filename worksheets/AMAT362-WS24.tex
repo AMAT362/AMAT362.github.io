@@ -1,0 +1,101 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{fullpage,xypic,mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, latexsym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[sans]{dsfont}
+
+\usepackage{graphicx}
+
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{bm}
+\newcommand{\mbf}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title{\vspace{-1in} MATH 362---Work Sheet 24}
+\date{NOT DUE BUT RECOMMENDED FOR THE FINAL}
+\author{Dr.~Justin M. Curry}
+
+
+%\input{shortcuts}
+
+\begin{document}
+\maketitle
+
+% \begin{center}
+% \fbox{\fbox{\parbox{6in}{\centering
+% \textbf{Open Book. Open Notes. Open Friends.}}}}
+% \end{center}
+% \vspace{0.2in}
+\makebox[.9\textwidth]{Name:\enspace\hrulefill}
+% % \vspace{0.2in}
+% % \makebox[\textwidth]{Instructor’s name: Dr. Justin Curry}
+
+
+
+
+\begin{questions}
+
+\question Suppose $(X,Y)$ have a JDF that is uniform on the triangle bounded above by the line $y=1-x$ and $y\geq 0$ and $x\geq 0$. 
+
+
+\noaddpoints
+\begin{parts}
+
+\part Suppose a point is sampled from this distribution and a rectangle is formed using the point and the origin. Compute the expected area.
+
+\vspace{2in}
+\part Compute the covariance of $X$ and $Y$.
+\vspace{2in}
+
+\part Compute the probability that the rectangle from Part (a) has area less than $1/16$.
+\vspace{1.7in}
+
+\end{parts}
+\addpoints
+
+\newpage
+\question Suppose that you're working a shift at Nikos. The first customer that arrives on your shift according to an exponential distribution whose average arrival time is 10 minutes. Your process of taking and filling their order is uniformly distributed between 1 and 6 minutes.  Suppose you start your shift at 10am. Compute the PDF of the time when you finish serving your first customer. What's the expected time that you'll finish serving your first customer?
+
+\vspace{2.75in}
+
+\question Suppose $X$ has a uniform $(0,1)$ distribution and $P(A\mid X=x)=x^2$. What is $P(A)$?
+
+\vspace{1.7in}
+
+\question Suppose $X,Y$ are RVs with JDF $f(x,y)=\lambda^3 xe^{-\lambda y}$ for $0<x<y$ and 0 otherwise.
+
+\noaddpoints
+\begin{parts}
+
+\part Find the PDF of $Y$.
+\vspace{1.5in}
+
+\part Compute $E(Y)$
+\vspace{1.5in}
+
+\part[2] Compute $E(X\mid Y=1)$.
+\vspace{1.5in}
+
+\end{parts}
+\addpoints
+
+\question[8] The RV $X$ has a uniform distribution on $(0,1)$. Given that $X=x$, the RV $Y$ is binomial with parameters $n=5$ and $p=x$.
+
+\noaddpoints
+\begin{parts}
+
+\part Find $E(Y)$ and $E(Y^2)$
+\vspace{2in}
+
+\part Find $P(Y=y \text{ and } x < X < x+ dx)$
+\vspace{1.8in}
+
+\part Find the density of $X$ given $Y=y$. Do you recognize it? If yes, as what?
+\vspace{1.7in}
+\end{parts}
+\addpoints
+
+\end{questions}
+
+\end{document}
