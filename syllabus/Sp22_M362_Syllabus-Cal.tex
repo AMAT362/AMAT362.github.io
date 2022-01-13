@@ -1,0 +1,215 @@
+\documentclass[11pt,reqno]{amsproc}
+\usepackage{termcal}
+%\title{Research Statement --- Justin M. Curry\vspace{-1in}}
+
+\setlength{\parskip}{0.45\baselineskip}
+
+\usepackage{amsmath,mathrsfs}
+\usepackage{amssymb,latexsym}
+%\usepackage{eulervm}
+
+\usepackage{graphicx}
+\usepackage{nicefrac}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[all]{xy}
+\usepackage{pb-diagram,pb-xy}
+%\usepackage[margin=1in,headheight=35pt,footskip=.3in]{geometry}
+\usepackage[margin=0.7in]{geometry}
+%\usepackage{fullpage}
+
+\usepackage{hyperref}
+\hypersetup
+{
+    colorlinks,	%
+    citecolor=Gray,%
+    filecolor=Gray,%
+    linkcolor=Gray,%
+    urlcolor=Gray
+}
+
+\usepackage{mdframed}
+% \usepackage{tikz}
+
+\mdfsetup{skipabove=\topskip,skipbelow=\topskip}
+
+
+
+\input{shortcuts}
+
+\usepackage{wrapfig}
+
+\newcommand{\uline}{\underline}
+
+\renewcommand{\refname}{\normalfont\selectfont\normalsize {\large \color{Gray}{references}}}
+
+\renewcommand{\refname}{\normalfont\selectfont\normalsize {\large \color{Gray}{references}}}
+
+\newcommand{\MWFClass}{%
+\calday[Monday]{\classday} % Monday
+\skipday % Tuesday (no class)
+\calday[Wednesday]{\classday} % Wednesday
+\skipday % Thursday (no class)
+\calday[Friday]{\classday} % Friday
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\MWClass}{%
+\calday[Monday]{\classday} % Monday
+\skipday % Tuesday (no class)
+\calday[Wednesday]{\classday} % Wednesday
+\skipday % Thursday (no class)
+%\calday[Friday]{\classday} % Friday
+\skipday % Friday no class
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\TuThuClass}{%
+\skipday % Monday (no class)
+\calday[Tuesday]{\classday} % Tuesday
+\skipday % Wednesday (no class)
+\calday[Thursday]{\classday} % Wednesday
+\skipday % Friday no class
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\Holiday}[2]{%
+\options{#1}{\noclassday}
+\caltext{#1}{#2}
+}
+
+\renewcommand{\calprintdate}{\textbf{\monthname\ \ordinaldate}}
+\renewcommand{\calprintclass}{Lecture \theclassnum}
+
+\begin{document}
+\pagenumbering{gobble}
+% \thispagestyle{fancy}
+\begin{center}
+	{\Large \color{Black}{AMAT 362---Probability for Statistics---Spring 2022 Syllabus}}
+	\noindent\rule{\textwidth}{0.1pt}
+
+	\textbf{Instructor:} Prof.~Justin M.~Curry \quad \textbf{Office:} ES 120C \quad \textbf{Email:} \url{jmcurry@albany.edu}
+\end{center}
+
+\noindent\textbf{Pre-Requisites:} Calculus of Several Variables (AMAT 214) and Introduction to Proofs (AMAT 299).
+
+\noindent\textbf{Lecture Place and Times:} \emph{ES 143} on \emph{MW 3:00-4:20pm}
+
+\noindent\textbf{Office Hours Place and Times:} Thurs 1:30-2:50 or by appt with Robby Green \url{rgreen@albany.edu}.
+
+\noindent\textbf{Course Texts:}
+\begin{itemize}
+  \item \emph{Probability} by Pittman [Pit] is strongly recommended/required.
+  \item \emph{Probability for the Enthusiastic Beginner} by Morin [M] is recommended.
+\end{itemize}
+
+\noindent\textbf{Course Topics:}
+This course is meant to serve as a calculus-based introduction to probability that provides a foundation for statistics as covered in AMAT 363.
+Additionally, this course is meant to serve as preparation for the \emph{Society of Actuaries} Exam P. The topics for the P exam are listed below, but I will follow my own selection of topics and spend more or less time focusing on topics that I think are important.
+
+\begin{enumerate}
+	\item General Probability: set theory, Venn diagrams, sample space and events; definition of probability measure, basic axioms; addition and multiplication rules; independence versus mutually exclusive events; calculation of conditional probabilities; combinatorics; Bayes' theorem and law of total probability.
+	\item Univariate Random Variables: discrete and continuous univariate random variables (RVs) including binomial, negative binomial, geometric, hypergeometric, Poisson, uniform, exponential, gamma, normal, mixed distributions and their applications; PDFs and CDFs of these RVs; expectation/mean, mode, median, percentile and higher moments; variance, standard deviation, coefficient of variation; probability and moment generating functions; sums of independent RVs, such as Poisson and Normal; transforms.
+	\item  Multivariate Random Variables: joint probability functions (PFs), PDFs, CDFs; conditional and marginal PFs, PDFs, CDFs and moments for these; covariance and correlation; transforms of multivariate RVs; probabilities and moments for linear combinations of RVs; central limit theorem.
+\end{enumerate}
+
+\noindent\textbf{Grading Schema:} I grade ``on a curve.'' In other words, I look at the distribution of final numerical grades---computed using the weighting described below---and try to determine clusters of students that deserve similar grades. Although it is theoretically possible that everyone could earn an A, experience suggests that typically 25-35\% of students earn some variant of an A, 35-55\% for B variants, 20-35\% for C variants and typically $\leq 25\%$ for Ds and Es.
+
+\begin{itemize}
+	\item $5\%$ Participation and Attendance
+	\item $15 \%$ Take Home Exam 1 --- Covers Lectures 1-8
+	\item $20 \%$ Take Home Exam 2 --- Covers Lectures 9-17
+  	\item $25 \%$ Take Home Final Exam --- Cumulative, but biased towards Lectures 18-24
+	\item $35 \%$ Lecture Worksheets
+\end{itemize}
+
+\noindent\textbf{Attendance and Late/Missed Work Policy:}
+Attendance is required, absent a reasonable excuse. Worksheets will be due one week after they're handed out. Worksheets that are handed in late, but before solutions are posted will be penalized $\approx10\%$. Solutions are typically posted 10 days after the due date. Worksheets that are handed in after solutions are posted will be penalized $\approx 30\%$. The meaning of $\approx$ is the closest integer number of points to this percentage of the total point value. No late exams will be accepted!  All work must be handed in with the final exam on Tuesday May 10th, no later.
+
+
+
+\noindent\textbf{Policy on Academic Integrity and Collaboration:}
+You are encouraged to collaborate on worksheets with your classmates and tutors, but \textbf{do not} post questions to online fora, such as Chegg. Unauthorized collaboration is strictly prohibited on take home exams. \textbf{Cheating on exams will result in a Violation of Academic Integrity Report (VAIR) and an automatic zero for the exam in question!}
+
+%\begin{center}
+%\fbox{\fbox{\parbox{6.5in}{\centering
+%\emph{You are encouraged to collaborate on worksheets with your classmates and tutors, but \textbf{do not} post questions to online fora such as Chegg. Unauthorized collaboration is strictly prohibited on take home exams. \textbf{Cheating on exams will result in a Violation of Academic Integrity Report (VAIR) and an automatic zero for the exam in question!}}}}}
+%\end{center}
+\newpage
+
+\begin{center}
+
+
+\textbf{The final exam will be due in class on Tuesday, May 10th from 3:30--5:30.}
+
+
+\begin{calendar}{1/24/2022}{15} % Put date of Monday of first week of classes and number of weeks
+\setlength\calboxdepth{.25in}
+\setlength\calwidth{\textwidth}
+\MWClass
+
+
+
+
+% schedule
+%\caltexton{1}{$\heartsuit$\textit{NO ClASS---MLK DAY}$\heartsuit$}
+% \caltexton{1}{L1:Admin + \S 1.1}
+% \caltextnext{L2: \S 1.2}
+% \caltextnext{L3: \S 1.3, 1.4}
+% \caltextnext{L4: \S 1.4, 1.5}
+
+\caltext{1/31/2022}{Due: WS 1}
+\caltext{2/2/2022}{Due: WS 2}
+\caltext{2/7/2022}{Due: WS 3}
+\caltext{2/9/2022}{Due: WS 4}
+\caltext{2/14/2022}{Due: WS 5}
+\caltext{2/16/2022}{Handout Practice Exam 1, WS 6 due.}
+\caltext{2/21/2022}{Due: WS 7 $\diamondsuit$\textbf{Take Home Exam 1}$\diamondsuit$}
+\Holiday{2/21/2022}{}
+\caltext{2/23/2022}{Due: WS 8}
+\caltext{2/28/2022}{$\spadesuit$\textbf{Exam 1 DUE}$\spadesuit$}
+\caltext{3/2/2022}{Due: WS 9}
+\caltext{3/7/2022}{Due: WS 10}
+\caltext{3/9/2022}{Due: WS 11}
+ \Holiday{3/14/2022}{$\heartsuit$\textit{SPRING BREAK}$\heartsuit$}
+ \Holiday{3/16/2022}{$\heartsuit$\textit{SPRING BREAK}$\heartsuit$}
+\caltext{3/21/2022}{Due: WS 12}
+\caltext{3/23/2022}{Due: WS 13}
+\caltext{3/28/2022}{Due: WS 14}
+\caltext{3/30/2022}{Handout Practice Exam 2, WS 15 due.}
+\caltext{4/4/2022}{Due: WS 16 $\diamondsuit$\textbf{Take Home Exam 2}$\diamondsuit$}
+\Holiday{4/4/2022}{}
+\caltext{4/6/2022}{Due: WS 17}
+\caltext{4/11/2022}{$\spadesuit$\textbf{Exam 2 DUE}$\spadesuit$}
+\caltext{4/13/2022}{Due: WS 18}
+\caltext{4/18/2022}{Due: WS 19}
+\caltext{4/20/2022}{Due: WS 20}
+\caltext{4/25/2022}{Due: WS 21}
+\caltext{4/27/2022}{Due: WS 22}
+\caltext{5/2/2022}{Handout Practice Final, WS 23 due.}
+\Holiday{5/2/2022}{}
+\caltext{5/4/2022}{Due: WS 24 $\diamondsuit$\textbf{Take Home Final}$\diamondsuit$}
+\Holiday{5/4/2022}{}
+% Holidays
+%\Holiday{2/21/2022}{$\spadesuit$\textbf{Midterm 1 Practice Review}$\spadesuit$}
+%\Holiday{2/23/2022}{$\spadesuit$\textbf{Midterm 1}$\spadesuit$}
+%\Holiday{3/3/2021}{$\heartsuit$\textit{NO ClASS}$\heartsuit$}
+%\Holiday{4/5/2021}{$\spadesuit$\textbf{Midterm 2}$\spadesuit$}
+
+%\Holiday{3/20/2020}{$\heartsuit$\textit{SPRING BREAK}$\heartsuit$}
+
+
+%\Holiday{4/6/2022}{$\spadesuit$\textbf{Midterm 2}$\spadesuit$}
+%\Holiday{5/2/2022}{$\spadesuit$\textbf{Final Review}$\spadesuit$}
+\Holiday{5/4/2022}{}
+%\Holiday{5/8/2020}{$\heartsuit$\textit{NO MORE CLASSES}$\heartsuit$}
+% \options{3/13/2018}{\noclassday}
+% \options{3/13/2018}{\noclassday}
+% \options{5/10/2018}{\noclassday}
+
+\end{calendar}
+
+\textbf{The final exam will be due in class on Tuesday, May 10th from 3:30--5:30.}
+
+\end{center}
+
+\end{document}
