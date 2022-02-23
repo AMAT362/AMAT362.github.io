@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 APR 2021 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  22 FEB 2022 18:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -601,6 +601,10 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 This exam contains 7 questions with 14 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 18 points.
 This exam has a total of 0 bonus points.
+
+Class exam Warning: Point totals have changed. Rerun to get point totals right.
+
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
 (./AMAT362-WS17.aux)
@@ -615,10 +619,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
- 10282 strings out of 492616
- 140194 string characters out of 6129482
- 294928 words of memory out of 5000000
- 14030 multiletter control sequences out of 15000+600000
+ 10284 strings out of 492616
+ 140231 string characters out of 6129482
+ 294937 words of memory out of 5000000
+ 14032 multiletter control sequences out of 15000+600000
  19877 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,6n,32p,1480b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -630,7 +634,7 @@ r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on AMAT362-WS17.pdf (4 pages, 90118 bytes).
+Output written on AMAT362-WS17.pdf (4 pages, 89807 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
