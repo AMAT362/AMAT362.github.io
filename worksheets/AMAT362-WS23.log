@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  3 MAY 2021 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  18 APR 2022 09:57
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -601,10 +601,6 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 This exam contains 4 questions with 11 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 18 points.
 This exam has a total of 0 bonus points.
-
-Class exam Warning: Point totals have changed. Rerun to get point totals right.
-
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
 (./AMAT362-WS23.aux)
@@ -617,7 +613,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
 Here is how much of TeX's memory you used:
  10248 strings out of 492616
  139772 string characters out of 6129482
- 294740 words of memory out of 5000000
+ 294753 words of memory out of 5000000
  14004 multiletter control sequences out of 15000+600000
  19530 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -626,7 +622,7 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
 sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on AMAT362-WS23.pdf (3 pages, 53127 bytes).
+Output written on AMAT362-WS23.pdf (3 pages, 52832 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream

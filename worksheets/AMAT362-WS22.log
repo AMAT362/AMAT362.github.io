@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  28 APR 2021 11:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  18 APR 2022 09:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -601,10 +601,6 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 This exam contains 6 questions with 15 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 22 points.
 This exam has a total of 0 bonus points.
-
-Class exam Warning: Point totals have changed. Rerun to get point totals right.
-
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
 (./AMAT362-WS22.aux)
@@ -612,16 +608,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 Package rerunfilecheck Info: File `AMAT362-WS22.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
  10280 strings out of 492616
  140175 string characters out of 6129482
- 293913 words of memory out of 5000000
+ 293954 words of memory out of 5000000
  14029 multiletter control sequences out of 15000+600000
  19530 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -634,7 +626,7 @@ sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on AMAT362-WS22.pdf (4 pages, 84048 bytes).
+Output written on AMAT362-WS22.pdf (4 pages, 83884 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
